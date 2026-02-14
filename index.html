@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="marco">
+
+
+        <div style="display:flex; justify-content:right; right:50% ; margin-right: auto;">
+
+            <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+                    type="module"></script>
+
+            <dotlottie-wc src="https://lottie.host/a53e1b4f-161e-45ba-839f-f8f7997d1613/J7wt3g4hIb.lottie"
+                          style="width: 300px;height: 300px; right: -0.8%"
+                          
+                          autoplay
+                          loop></dotlottie-wc>
+            <button id="botonSecreto"></button>
+
+        </div>
+
+        <div id="login-screen">
+            <h1 class="welcome">
+                Feliz Día 
+                
+            </h1>
+            <h4 class="mensajito"   >¿Sabía que aún sin luz, sigo viendo vuestro mirar?</h4>
+            <h4 class="mensajito2">Nunca sale de mi mente para que desaparezca sin más</h4>
+
+
+            <div class="password-box">
+                <p>Introduce la contraseña</p>
+                <input type="password" id="passwordInput" />
+                <button class="btn primary" id="enterBtn" onclick="checkPassword()">Entrar</button>
+
+                <p id="errorMsg"></p>
+                <p class="hint" id="hint"></p>
+
+
+
+
+                
+
+                <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="music-buttons">
+
+                <div class="music-buttons">
+                    <button class="btn secondary" id="youtube">
+                        <span class="icon">
+                            <i class="fa-brands fa-youtube" style="font-size:48px; color:red;"></i>
+                        </span>
+                        <span class="label">Dale Play</span>
+                    </button>
+
+                    <button class="btn secondary" id="instagram">
+                        <span class="icon">
+                            <i class="fa-brands fa-instagram" style="font-size:48px; color:#E1306C;"></i>
+                        </span>
+                        <span class="label">Instagram</span>
+                    </button>
+
+                    <button class="btn secondary" id="spotify">
+                    <span class="icon">
+                        <i class="fa-brands fa-spotify" style="font-size:48px; color:darkgreen;"></i>
+                    </span>
+                    <span class="label">Spotify</span>
+                    </button>
+
+                </div>
+
+
+                <script>
+                    function openYoutube() {
+                        window.open(
+                            "https://youtu.be/HqMX3o4SFyM?si=vEqHNj6mJgXIpGbb",
+                            "_blank"
+                        );
+                    }
+                    // usar el id correcto y NO ejecutar la función aquí
+                    document
+                        .getElementById("youtube")
+                        .addEventListener("click", openYoutube);
+                </script>
+                <script>
+                    function openinstagram() {
+                        window.open(
+                            "https://www.instagram.com/p/CoAnKPmpXlk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", "_blank"
+                        );
+                    }
+
+
+                    // usar el id correcto y NO ejecutar la función aquí
+                    document
+                        .getElementById("instagram")
+                        .addEventListener("click", openinstagram);
+                </script>
+
+                <script>
+                    function openspotify() {
+                        window.open(
+                            "https://open.spotify.com/intl-es/track/0XPayKZFFZA2PwSRNi1pVU?si=05466e5c9599413e", "_blank"
+                        );
+                    }
+
+
+                    // usar el id correcto y NO ejecutar la función aquí
+                    document
+                        .getElementById("spotify")
+                        .addEventListener("click", openspotify);
+                </script>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

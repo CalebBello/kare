@@ -1,0 +1,228 @@
+﻿﻿* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#ffe6f0, #fff);
+    background: linear-gradient(135deg, #00aae4, rgba(255, 154, 196, 0.5));
+    text-align: center;
+}
+.mensajito2 {
+    padding: -50px;
+    font-family: 'MS Gothic', 1em;
+    font-style: italic;
+}
+.mensajito {
+    font-family: 'MS Gothic', 5em;
+    font-style: italic;
+    padding-top: -20px;
+    padding-bottom: -50px;
+}
+
+        .marco {
+            min-height: 100vh;
+            border: 20px ridge #e466b3;
+            box-sizing: border-box;
+            box-shadow: 0 0 20px rgba(255, 154, 196, 0.5);
+        }
+
+        #login-screen {
+            height: 100vh;
+            display: flex;
+            border-radius: 60px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -250px;
+        }
+
+        .welcome {
+            position: relative;
+            top: -100px;
+            font-family: 'MS Gothic', 5em;
+            font-size: 90px;
+            font-style: italic;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-soft: #dbeafe;
+            --text-on-primary: #ffffff;
+        }
+
+
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 999px; /* pill */
+            border: none;
+            font: 500 0.95rem system-ui;
+            cursor: pointer;
+            background: #111827;
+            color: #f9fafb;
+            transition: background-color .25s ease, color .25s ease, box-shadow .25s ease, transform .15s ease;
+        }
+
+        #botonSecreto {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px; /* hazlo grande a tu gusto */
+            height: 150px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            opacity: 0; /* totalmente invisible */
+            z-index: 9999; /* por encima de todo */
+        }
+
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px #2563eb;
+        }
+
+        .btn.primary:hover {
+            background: linear-gradient(135deg, #1d4ed8, #4338ca);
+        }
+
+        .btn.secondary:hover {
+            background: #1f2937;
+        }
+
+
+
+        .btn.ghost:hover {
+            background: var(--primary-soft);
+            border-color: var(--primary);
+            color: var(--primary-dark);
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid #bfdbfe;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
+        }
+
+        .btn.primary {
+            background: linear-gradient(135deg, #00aae4, rgba(255, 154, 196, 0.5));
+            color: var(--text-on-primary);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+        }
+
+        .btn.secondary {
+            background: #111827;
+            color: #e5e7eb;
+            border: 1px solid #374151;
+            padding-top: 10px;
+            position: relative;
+        }
+
+        .music-buttons {
+            display: flex;
+            gap: 1rem; /* separación entre Spotify e Instagram */
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .btn.ghost {
+            background: transparent;
+            color: #1f2933;
+            border: 1px solid #cbd5f5;
+        }
+
+        #youtube {
+            position: fixed;
+            bottom: 20px;
+            left: 80px;
+        }
+
+        #instagram {
+            position: fixed;
+            bottom: 20px;
+            right: 80px;
+        }
+
+        #spotify {
+            position: fixed;
+            bottom: 20px;
+        }
+
+
+
+
+
+
+
+
+        .password-box {
+            background: white;
+            padding: 70px;
+            margin-right: 10px;
+            border-radius: 15px;
+            box-shadow: 0 10px 600px rgba(0,0,0,0.2);
+            animation: fadeIn 1.5s;
+        }
+
+            .password-box input {
+                padding: 10px;
+                font-size: 1em;
+                margin: 10px 0;
+                width: 200px;
+            }
+
+            .password-box button {
+                padding: 10px 10px;
+                cursor: pointer;
+            }
+
+        #errorMsg {
+            color: red;
+        }
+
+        .hint {
+            color: #666;
+            font-size: 0.9em;
+        }
+        /* Animación */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+        /* Contenido */
+        #content {
+            min-height: 200vh;
+            padding-top: 100px;
+        }
+
+
+        .buttons {
+            margin: 20px;
+        }
+
+        #noBtn {
+            position: relative;
+        }
